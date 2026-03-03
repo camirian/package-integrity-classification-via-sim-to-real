@@ -1,0 +1,19 @@
+# Dataset configuration for Ultralytics YOLOv8.
+#
+# This file is also auto-generated alongside the synthetic dataset by
+# generate-synthetic-data.py.  This checked-in copy serves as a reference
+# and can be pointed at directly from the training CLI.
+#
+# For local development, update the 'path' field to match your machine.
+# See: https://docs.ultralytics.com/datasets/detect/
+
+path: ../../data/synthetic-dataset
+
+train: train/images
+val:   val/images
+
+nc: 3
+names:
+  0: Pristine
+  1: Dented
+  2: Crushed
