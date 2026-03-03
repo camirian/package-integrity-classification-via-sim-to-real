@@ -1,0 +1,18 @@
+# ──────────────────────────────────────────────────────────────────────
+# Phase 3: Model Training (workstation)
+# ──────────────────────────────────────────────────────────────────────
+ultralytics>=8.0.0
+onnx>=1.14.0
+onnxruntime-gpu>=1.17.0
+
+# Core numerical stack
+numpy>=1.24.0
+pillow>=10.0.0
+
+# ──────────────────────────────────────────────────────────────────────
+# Phase 2: Synthetic Data Generation
+# (omni.replicator.core is available inside Isaac Sim — listed here for
+#  documentation purposes only; do not pip-install these externally)
+# ──────────────────────────────────────────────────────────────────────
+# omni.replicator.core  # provided by Isaac Sim runtime
+# pxr                   # provided by Isaac Sim runtime

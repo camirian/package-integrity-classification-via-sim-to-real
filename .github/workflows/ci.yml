@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  lint-and-syntax-check:
+    name: Lint & Syntax Check (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11"]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install linting dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8
+
+      - name: Verify syntax (py_compile)
+        run: |
+          python -m py_compile phase-2-synthetic-data-generation/scripts/generate-synthetic-data.py
+          python -m py_compile phase-3-model-training/scripts/train.py
+          echo "✅ All scripts pass syntax check"
+
+      - name: Run flake8 (PEP 8 compliance)
+        run: |
+          flake8 phase-2-synthetic-data-generation/ phase-3-model-training/ \
+            --max-line-length=100 \
+            --extend-ignore=E501,E402,F821,F401 \
+            --statistics

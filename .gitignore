@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# ML / Model artefacts
+models/
+data/synthetic-dataset/
+*.pt
+*.onnx
+*.engine
+*.trt
+
+# NVIDIA Omniverse
+_omni_cache/
+kit/
+_build/
+
+# JetBrains IDEs
+.idea/
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
