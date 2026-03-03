@@ -1,5 +1,10 @@
 <div align="center">
   <h1>📦 Package Integrity Classification via Sim-to-Real</h1>
+
+  > **Breadcrumb Protocol**
+  > *   [📖 READ: Walkthrough & Usage Instructions](WALKTHROUGH.md)
+  > *   [🏗️ READ: Architectural Build Log](BUILD_LOG.md)
+
   <p><strong>A zero-shot, end-to-end Cyber-Physical AI pipeline.</strong></p>
   <p><em>Training an object detection model to classify the physical state of logistics packages (Pristine, Dented, Crushed) using <strong>100% synthetic data</strong> generated in NVIDIA Isaac Sim, for real-time edge deployment on a Jetson Orin Nano.</em></p>
 
