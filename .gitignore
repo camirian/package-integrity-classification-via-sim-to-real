@@ -37,6 +37,9 @@ _build/
 # VS Code
 .vscode/
 
+# External Reopsitories
+isaac_ros_common/
+
 # MacOS
 .DS_Store
 

@@ -37,29 +37,29 @@ This project demonstrates a **next-generation Cyber-Physical architecture**. By 
 The project is structured linearly into four distinct phases, mimicking a professional L5 autonomy engineering lifecycle:
 
 ```mermaid
-graph TD;
-    subgraph "Phase 1: Isaac Sim Environment"
-    A[Deformable Object Config] -->|Drop physics| B(box-pristine.usd)
-    A -->|Drop physics| C(box-dented.usd)
-    A -->|Drop physics| D(box-crushed.usd)
+flowchart TD
+    subgraph P1 ["Phase 1: Isaac Sim Environment"]
+        A[Deformable Object Config] -->|Drop physics| B(box-pristine.usd)
+        A -->|Drop physics| C(box-dented.usd)
+        A -->|Drop physics| D(box-crushed.usd)
     end
 
-    subgraph "Phase 2: Omniverse Replicator"
-    B --> E{Domain Randomization}
-    C --> E
-    D --> E
-    E -->|1000s of Frames| F[(Synthetic Dataset)]
+    subgraph P2 ["Phase 2: Omniverse Replicator"]
+        B --> E{Domain Randomization}
+        C --> E
+        D --> E
+        E -->|1000s of Frames| F[(Synthetic Dataset)]
     end
 
-    subgraph "Phase 3: Model Training"
-    F --> G[YOLOv8-Nano Fine-Tuning]
-    G --> H[best.pt checkpoint]
-    H -->|Opset 17, FP16| I[best.onnx]
+    subgraph P3 ["Phase 3: Model Training"]
+        F --> G[YOLOv8-Nano Fine-Tuning]
+        G --> H[best.pt checkpoint]
+        H -->|Opset 17, FP16| I[best.onnx]
     end
 
-    subgraph "Phase 4: Edge Deployment (Jetson)"
-    I --> J[TensorRT Engine]
-    J --> K[Real-time Inference]
+    subgraph P4 ["Phase 4: Edge Deployment (Jetson)"]
+        I --> J[TensorRT Engine]
+        J --> K[Real-time Inference]
     end
 ```
 
