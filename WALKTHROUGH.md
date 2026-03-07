@@ -103,4 +103,4 @@ You can view the real-time inference stream by opening `rqt` or RViz2 and subscr
 
 Below is a live capture from the ROS 2 inference node processing a mock test feed during repository verification. The bounding boxes and class labels are rendered in real-time by the deployed Ultralytics runtime.
 
-![ROS 2 YOLOv8 Inference Output](docs/media/ros2_inference_verification.png)
+![ROS 2 YOLOv8 Inference Output](docs/media/ros2_inference_live_capture.png)
