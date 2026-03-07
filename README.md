@@ -37,10 +37,15 @@ This project demonstrates a **next-generation Cyber-Physical architecture**. By 
 The project is structured linearly into four distinct phases, mimicking a professional L5 autonomy engineering lifecycle:
 
 ```mermaid
-%%{init: {"flowchart": {"defaultRenderer": "elk", "padding": 30}} }%%
+%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
 flowchart TD
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px;
+    classDef invisible fill:none,stroke:none,color:none;
+
     subgraph P1 ["Phase 1: Isaac Sim Environment"]
         direction TB
+        P1_spacer[ ]:::invisible
+        P1_spacer ~~~ A
         A[Deformable Object Config] -->|Drop physics| B(box-pristine.usd)
         A -->|Drop physics| C(box-dented.usd)
         A -->|Drop physics| D(box-crushed.usd)
@@ -48,6 +53,8 @@ flowchart TD
 
     subgraph P2 ["Phase 2: Omniverse Replicator"]
         direction TB
+        P2_spacer[ ]:::invisible
+        P2_spacer ~~~ E
         B --> E{Domain Randomization}
         C --> E
         D --> E
@@ -56,6 +63,8 @@ flowchart TD
 
     subgraph P3 ["Phase 3: Model Training"]
         direction TB
+        P3_spacer[ ]:::invisible
+        P3_spacer ~~~ G
         F --> G[YOLOv8-Nano Fine-Tuning]
         G --> H[best.pt checkpoint]
         H -->|Opset 17, FP16| I[best.onnx]
@@ -63,6 +72,8 @@ flowchart TD
 
     subgraph P4 ["Phase 4: Edge Deployment (Jetson)"]
         direction TB
+        P4_spacer[ ]:::invisible
+        P4_spacer ~~~ J
         I --> J[TensorRT Engine]
         J --> K[Real-time Inference]
     end
