@@ -98,8 +98,8 @@ class CameraRandomisation:
     """Bounds for hemisphere camera sampling (metres)."""
 
     position_min: Tuple[float, float, float] = (-0.6, -0.6, 0.25)
-    position_max: Tuple[float, float, float] = ( 0.6,  0.6, 0.80)
-    look_at:      Tuple[float, float, float] = ( 0.0,  0.0, 0.15)
+    position_max: Tuple[float, float, float] = (0.6, 0.6, 0.80)
+    look_at:      Tuple[float, float, float] = (0.0, 0.0, 0.15)
 
 
 @dataclass
@@ -111,7 +111,7 @@ class LightRandomisation:
     temperature_min: float = 3_500.0
     temperature_max: float = 7_500.0
     position_min: Tuple[float, float, float] = (-1.0, -1.0, 0.8)
-    position_max: Tuple[float, float, float] = ( 1.0,  1.0, 1.5)
+    position_max: Tuple[float, float, float] = (1.0, 1.0, 1.5)
 
 
 @dataclass
