@@ -9,6 +9,7 @@
   <p><em>Training an object detection model to classify the physical state of logistics packages (Pristine, Dented, Crushed) using <strong>100% synthetic data</strong> generated in NVIDIA Isaac Sim, for real-time edge deployment on a Jetson Orin Nano.</em></p>
 
   <p>
+    <a href="https://github.com/camirian/package-integrity-classification-via-sim-to-real/actions/workflows/ci.yml"><img src="https://github.com/camirian/package-integrity-classification-via-sim-to-real/actions/workflows/ci.yml/badge.svg" alt="CI Status" /></a>
     <a href="https://docs.omniverse.nvidia.com/isaacsim/latest/index.html"><img src="https://img.shields.io/badge/NVIDIA-Isaac_Sim-76B900?style=for-the-badge&logo=nvidia" alt="Isaac Sim" /></a>
     <a href="https://developer.nvidia.com/embedded/jetson-orin-nano-developer-kit"><img src="https://img.shields.io/badge/Hardware-Jetson_Orin_Nano-76B900?style=for-the-badge&logo=nvidia" alt="Jetson Orin Nano" /></a>
     <a href="https://github.com/ultralytics/ultralytics"><img src="https://img.shields.io/badge/YOLOv8-Nano-00FFFF?style=for-the-badge&logo=yolo" alt="YOLOv8" /></a>
