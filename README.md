@@ -111,8 +111,17 @@ The `train.py` module defines an enterprise-grade YOLOv8 training loop:
 - **Edge-Ready:** Automated ONNX export configured precisely for Jetson TensorRT translation.
 
 ```bash
-# Fine-tune the Nano model and export to ONNX
-python3 phase-3-model-training/scripts/train.py train --epochs 100 --batch 16
+python phase-3-model-training/scripts/train.py --task train
+python phase-3-model-training/scripts/train.py --task validate
+python phase-3-model-training/scripts/train.py --task export
+```
+
+### Phase 4: Edge Deployment (Jetson Orin Nano / ROS 2)
+```bash
+cd phase-4-deployment-and-inference
+colcon build --symlink-install
+source install/setup.bash
+ros2 launch package_integrity_inference inference.launch.py model_path:=/absolute/path/to/best.onnx
 ```
 
 ---

@@ -72,3 +72,29 @@ python phase-3-model-training/scripts/train.py export --weights models/package-i
 
 ### Deployment Handoff
 The resulting `best.onnx` file and its metadata JSON will be located right beside your weights directory, ready to be transferred to your edge device!
+
+---
+
+## 5. Phase 4: Edge Deployment via ROS 2
+
+With the `best.onnx` TensorRT-ready model exported, the final phase involves physical deployment on a Jetson Orin Nano edge device. We have built a standard `ament_python` ROS 2 package inside `phase-4-deployment-and-inference/ros-packages/package_integrity_inference`.
+
+This node automatically ingests a standard `sensor_msgs/Image` topic from a USB webcam (or RealSense interface), passes the frame to the Ultralytics TensorRT backend, and publishes both the annotated image stream and raw bounding boxes via `vision_msgs`.
+
+### Jetson Execution
+
+To run the inference node on the Jetson, first build the ROS 2 workspace:
+
+```bash
+cd phase-4-deployment-and-inference
+colcon build --symlink-install
+source install/setup.bash
+```
+
+Then, execute the launch file. We default to `/dev/video0` and `/image_raw` using the `ros-humble-v4l2-camera` driver:
+
+```bash
+ros2 launch package_integrity_inference inference.launch.py model_path:=/absolute/path/to/best.onnx
+```
+
+You can view the real-time inference stream by opening `rqt` or RViz2 and subscribing to `/yolo_inference_node/annotated_image`.
