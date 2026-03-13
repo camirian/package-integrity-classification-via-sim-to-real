@@ -81,7 +81,7 @@ flowchart TD
 
 ---
 
-## 📁 Repository Structure
+## 📁 Project Structure
 
 ```text
 .
