@@ -4,13 +4,13 @@
 * [🏗️ READ: Architectural Build Log](BUILD_LOG.md)
 **A zero-shot, end-to-end Cyber-Physical AI pipeline.**
 *Training an object detection model to classify the physical state of logistics packages (Pristine, Dented, Crushed) using **100% synthetic data** generated in NVIDIA Isaac Sim, for real-time edge deployment on a Jetson Orin Nano.*
-<p align="left">
-  <a href="https://github.com/camirian/package-integrity-classification-via-sim-to-real/actions/workflows/ci.yml"><img src="https://github.com/camirian/package-integrity-classification-via-sim-to-real/actions/workflows/ci.yml/badge.svg" alt="CI Status" /></a>
-  <a href="https://docs.omniverse.nvidia.com/isaacsim/latest/index.html"><img src="https://img.shields.io/badge/NVIDIA-Isaac_Sim-76B900?style=for-the-badge&logo=nvidia" alt="Isaac Sim" /></a>
-  <a href="https://developer.nvidia.com/embedded/jetson-orin-nano-developer-kit"><img src="https://img.shields.io/badge/Hardware-Jetson_Orin_Nano-76B900?style=for-the-badge&logo=nvidia" alt="Jetson Orin Nano" /></a>
-  <a href="https://github.com/ultralytics/ultralytics"><img src="https://img.shields.io/badge/YOLOv8-Nano-00FFFF?style=for-the-badge&logo=yolo" alt="YOLOv8" /></a>
-  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" /></a>
-</p>
+
+<a href="https://github.com/camirian/package-integrity-classification-via-sim-to-real/actions/workflows/ci.yml"><img src="https://github.com/camirian/package-integrity-classification-via-sim-to-real/actions/workflows/ci.yml/badge.svg" alt="CI Status" /></a>
+<a href="https://docs.omniverse.nvidia.com/isaacsim/latest/index.html"><img src="https://img.shields.io/badge/NVIDIA-Isaac_Sim-76B900?style=for-the-badge&logo=nvidia" alt="Isaac Sim" /></a>
+<a href="https://developer.nvidia.com/embedded/jetson-orin-nano-developer-kit"><img src="https://img.shields.io/badge/Hardware-Jetson_Orin_Nano-76B900?style=for-the-badge&logo=nvidia" alt="Jetson Orin Nano" /></a>
+<a href="https://github.com/ultralytics/ultralytics"><img src="https://img.shields.io/badge/YOLOv8-Nano-00FFFF?style=for-the-badge&logo=yolo" alt="YOLOv8" /></a>
+<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" /></a>
+
 ---
 ## 🎯 Executive Summary
 The **"Sim-to-Real Gap"** is the primary bottleneck in modern robotics and autonomous systems. Traditional machine learning relies on massive datasets of manually annotated real-world images—a process that is slow, expensive, and fragile to edge cases.
