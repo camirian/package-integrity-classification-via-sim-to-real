@@ -1,23 +1,20 @@
-<div align="center">
-  <h1>📦 Package Integrity Classification via Sim-to-Real</h1>
+# 📦 Package Integrity Classification via Sim-to-Real
 
-  > **Breadcrumb Protocol**
-  > *   [📖 READ: Walkthrough & Usage Instructions](WALKTHROUGH.md)
-  > *   [🏗️ READ: Architectural Build Log](BUILD_LOG.md)
+> **Breadcrumb Protocol**
+> *   [📖 READ: Walkthrough & Usage Instructions](WALKTHROUGH.md)
+> *   [🏗️ READ: Architectural Build Log](BUILD_LOG.md)
 
-  <p><strong>A zero-shot, end-to-end Cyber-Physical AI pipeline.</strong></p>
-  <p><em>Training an object detection model to classify the physical state of logistics packages (Pristine, Dented, Crushed) using <strong>100% synthetic data</strong> generated in NVIDIA Isaac Sim, for real-time edge deployment on a Jetson Orin Nano.</em></p>
+**A zero-shot, end-to-end Cyber-Physical AI pipeline.**
 
-  <p>
-    <a href="https://github.com/camirian/package-integrity-classification-via-sim-to-real/actions/workflows/ci.yml"><img src="https://github.com/camirian/package-integrity-classification-via-sim-to-real/actions/workflows/ci.yml/badge.svg" alt="CI Status" /></a>
-    <a href="https://docs.omniverse.nvidia.com/isaacsim/latest/index.html"><img src="https://img.shields.io/badge/NVIDIA-Isaac_Sim-76B900?style=for-the-badge&logo=nvidia" alt="Isaac Sim" /></a>
-    <a href="https://developer.nvidia.com/embedded/jetson-orin-nano-developer-kit"><img src="https://img.shields.io/badge/Hardware-Jetson_Orin_Nano-76B900?style=for-the-badge&logo=nvidia" alt="Jetson Orin Nano" /></a>
-    <a href="https://github.com/ultralytics/ultralytics"><img src="https://img.shields.io/badge/YOLOv8-Nano-00FFFF?style=for-the-badge&logo=yolo" alt="YOLOv8" /></a>
-    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" /></a>
-  </p>
+*Training an object detection model to classify the physical state of logistics packages (Pristine, Dented, Crushed) using **100% synthetic data** generated in NVIDIA Isaac Sim, for real-time edge deployment on a Jetson Orin Nano.*
 
-  [View the Structural Roadmap](ROADMAP.md)
-</div>
+[![CI Status](https://github.com/camirian/package-integrity-classification-via-sim-to-real/actions/workflows/ci.yml/badge.svg)](https://github.com/camirian/package-integrity-classification-via-sim-to-real/actions/workflows/ci.yml)
+[![Isaac Sim](https://img.shields.io/badge/NVIDIA-Isaac_Sim-76B900?style=for-the-badge&logo=nvidia)](https://docs.omniverse.nvidia.com/isaacsim/latest/index.html)
+[![Jetson Orin Nano](https://img.shields.io/badge/Hardware-Jetson_Orin_Nano-76B900?style=for-the-badge&logo=nvidia)](https://developer.nvidia.com/embedded/jetson-orin-nano-developer-kit)
+[![YOLOv8](https://img.shields.io/badge/YOLOv8-Nano-00FFFF?style=for-the-badge&logo=yolo)](https://github.com/ultralytics/ultralytics)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+
+[View the Structural Roadmap](ROADMAP.md)
 
 ---
 
