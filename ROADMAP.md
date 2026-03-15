@@ -15,4 +15,4 @@
 **Goal:** "Autonomous Logistics Eye"
 - Fully autonomous, fleet-wide visual inspection system for massive logistics hubs.
 - 100% synthetically trained on infinite variations of damage, lighting, and environments.
-- Integration into the CertOS engine for automated regulatory compliance in logistics safety.
+- Integration into the Automated Certification Engine for automated regulatory compliance in logistics safety.
